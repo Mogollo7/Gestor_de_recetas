@@ -111,7 +111,7 @@ btn_eliminar.pack()
 btn_salir = tk.Button(ventana, text="x", command=fnsalir)
 btn_salir.place(x=0, y=0)
 
-# Iniciar el bucle principal de la ventana
+# Iniciar el bucle principal de la ventana listo
 crear_menu(ventana)
 
 ventana.mainloop()
