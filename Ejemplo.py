@@ -1,18 +1,5 @@
-from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
-
-def fnsalir():
-
-    ventana.destroy()
-
-def crear_menu(ventana):
-    barra_menu = Menu(ventana)
-    ventana.config(menu=barra_menu)
-    
-    # Menú de Inicio
-    menu_inicio = Menu(barra_menu, tearoff=0)
-    barra_menu.add_cascade(label="Inicio", menu=menu_inicio)
 
 # Clase Receta para almacenar nombre y lista de ingredientes
 class Receta:
@@ -108,10 +95,5 @@ btn_ver.pack()
 btn_eliminar = tk.Button(ventana, text="Eliminar receta", command=eliminar_receta)
 btn_eliminar.pack()
 
-btn_salir = tk.Button(ventana, text="x", command=fnsalir)
-btn_salir.place(x=0, y=0)
-
 # Iniciar el bucle principal de la ventana
-crear_menu(ventana)
-
 ventana.mainloop()
